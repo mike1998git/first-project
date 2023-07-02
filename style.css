@@ -1,0 +1,289 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+*{
+     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "inter" , sans-serif;
+    text-decoration: none;
+} 
+
+body{
+    /* font-size: 12.8px; */
+    margin: 0 10%;
+    height: auto;
+    background-color: var(--off-white);
+    
+
+} 
+
+:root{
+       --soft-orange: hsl(35, 77%, 62%);
+       --soft-red: hsl(5, 85%, 63%);
+       --off-white: #fffdfa;
+       --grayish-blue: hsl( 236, 13%, 42%);
+       --dark-grayish-blue: hsl(236,13%,42%);
+       --very-dark-blue: hsl(240, 100%, 5%);
+
+}
+
+a{
+    text-decoration: none;
+}
+
+
+ nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    /* background-color: aquamarine; */
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 60% ;
+ }
+
+ ul{
+    width: 45%;
+    display: flex;
+    list-style: none;
+    justify-content: space-between; 
+ }
+ a,p{
+    color: var(--dark-grayish-blue);
+    
+
+ }
+
+ a:hover{
+
+    color:var(--soft-red) ;
+
+ }
+/* main section */
+ .main{
+    display: flex;
+    width: 100;
+    justify-content: space-between;
+    
+ }
+
+ .hero{
+       width: 68%;
+      
+
+ }
+
+ .new{
+      width: 30%;
+      background-color: aqua;
+
+ }
+
+/* hero */
+.hero img{
+    width: 100%;
+}
+
+.hero img:nth-of-type(2){
+    display: none;
+}
+
+.hero-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+ 
+.bright{
+    width:50% ;
+    color: var(--very-dark-blue);
+    
+}
+.bright h1{
+    font-weight: 800;
+    
+    font-size: 3rem;
+
+}
+
+.readmore{
+    width: 50%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+
+}
+
+
+button{
+    background-color: var(--soft-red) ;
+    color:var(--off-white) ;
+    outline: none;
+    padding: 10px;
+    border: none;
+    width: 50%;
+
+}
+
+button a{
+    color: var(--off-white);
+}
+button:hover{
+    background-color: var(--very-dark-blue);
+    color: var(--off-white);
+    cursor: pointer;
+}
+.new{
+    background-color: var(--very-dark-blue); 
+    display: flex;  
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.new-text{
+width: 90%;
+}
+
+.new-text p{ font-size: 0.76rem;
+}
+.new h1{
+    color: var(--soft-orange);
+    align-self: flex-start;
+    margin-left: 5%;
+ 
+}
+
+.new-text>h3{
+    color: var(--off-white);
+    font-size: 1.2rem;
+}
+
+.new-text>h3:hover{
+    color: var(--soft-orange);
+}
+/* line */
+
+hr{
+    width: 90%;
+    border: 1px solid var(--grayish-blue);
+}
+
+/* footer section */
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 4rem;
+    margin-bottom: 4rem; */
+    margin: 4rem 0;
+}
+.footer-card{
+    width: 33%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-card img{
+    width: 30%;
+
+}
+
+.footer-card-text{
+    width: 66%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-card h1{
+    color: var(--grayish-blue);
+}
+
+.footer-card-text h3{
+color: var(--very-dark-blue);
+font-size: 0.8rem;
+font-weight: 800;
+}
+
+.footer-card-text p{
+font-size: 0.76rem ;
+font-weight: 400 ;
+}
+
+.menu{
+    display: none;
+}
+
+.btn-close{
+    color: red;
+}
+
+/* media  query */
+@media (max-width:778px) {
+   
+    ul{
+        display: none;
+    }
+
+    .menu{
+        display: block;
+    }
+    .hero img:nth-of-type(2){
+        display: block;
+    }
+
+    .hero img:nth-of-type(1){
+        display: none;
+    }
+
+    .main,.hero-content,.footer{
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    /* .hero-content{
+        flex-direction: column;
+        gap: 20px;
+       
+    }
+
+    .footer{
+        flex-direction: column;
+        gap: 20px;
+    } */
+
+    .hero,.new,.bright,.readmore{
+        width: 100%;
+    }
+
+    .new{
+        height: 480px;
+        margin-top: 2rem;
+    }
+
+    .new p{
+        font-size: 1rem;
+    }
+    
+    .bright,.readmore{
+        width: 100%;
+    }
+    
+    .footer-card{
+        width: 100%;
+    }
+
+    button{
+        margin-top: 1rem;
+    }
+    
+        
+}
+
+
